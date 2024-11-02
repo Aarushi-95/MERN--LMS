@@ -14,13 +14,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 const MONGO_URI="mongodb+srv://agarwalaarushi95:sweety829@cluster0.u12ih.mongodb.net/";
 
-app.use(
-    cors({
-        origin : process.env.CLIENT_URL,
-        methods : ["GET", "POST", "DELETE", "PUT"],
-        allowedHeaders : ['Content-Type', 'Authorization'],
-    })
-);
+app.use(cors());
 
 
 app.use(express.json());
