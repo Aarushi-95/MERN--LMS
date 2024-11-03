@@ -50,12 +50,12 @@ function StudentCoursesPage(){
                             <h3 className="font-bold mb-1">{course?.title}</h3>
                             <p className="text-sm text-gray-700 mb-2">{course?.instructorName}</p>
                         </CardContent>
-                        {/* <CardFooter>
+                        <CardFooter>
                             <Button onClick= {()=>navigate(`/course-progress/${course?.courseId}`)}className="flex-1">
                                 <Watch className="mr-2 h-4 w-4"/>
                                 Start Watching
                             </Button>
-                        </CardFooter> */}
+                        </CardFooter>
                     </Card>
                 )
                 : <h1 className="text-3xl font-bold">No Courses Found</h1>

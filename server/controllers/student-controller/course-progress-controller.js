@@ -22,6 +22,7 @@ const markCurrentLectureAsViewed = async(req, res)=>{
 
 //get our current course progress
 const getCurrentCourseProgress = async(req, res)=>{
+    console.log("Aarushi")
     try{
         const {userId, courseId} = req.params;
 
@@ -32,7 +33,7 @@ const getCurrentCourseProgress = async(req, res)=>{
 
         if(!isCurrentCourseIsPurchasedByCurrentUserOrNot){
             return res.status(200).json({
-                success : false,
+                success : true,
                 data : {
                     isPurchased : false,
 
